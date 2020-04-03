@@ -74,6 +74,7 @@
   </table>
 
   <?php 
+  $array_gesamt =array();
 for($i=1; $i < 11; $i++)
 {
   if(!empty($_POST['menge'.strval($i)] or $_POST['einzel'.strval($i)] or $_POST['gesamt'.strval($i)]))
@@ -81,7 +82,7 @@ for($i=1; $i < 11; $i++)
     $help = 0;
     $menge_str = $_POST['menge'.strval($i)]; 
     $menge = (int)$menge_str;
-    $array_gesamt =array();
+    
 
     if ($menge >= 0 and $menge_str == $menge) 
     {
@@ -176,9 +177,12 @@ for($i=1; $i < 11; $i++)
 $summe = NULL; 
 
 if(0 < sizeof($array_gesamt)){
-for($i=0; $i < sizeof($array_gesamt); $i++){
-$summe = $summe+$array_gesamt[$i];
+  for($i=0; $i < sizeof($array_gesamt); $i++){
+  $summe = $summe+$array_gesamt[$i];
+  }
 }
+else{
+echo '';
 }
   ?> 
   <table style="width:100%">
@@ -195,4 +199,3 @@ $summe = $summe+$array_gesamt[$i];
   </table>
  </body>
 </html>
-
