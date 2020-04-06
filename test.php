@@ -90,7 +90,7 @@ for($i=1; $i < 11; $i++)
       echo '<br>';
     }
     else{
-      echo '<p style="color:red">Die '.$i.'.Artikel-Menge ist keine Ganzzahl oder ist kleiner als 0</p>'; 
+      echo '<p style="color:red">Die '.$i.'.Artikel-Menge ist keine Ganzzahl oder ist kleiner als 1</p>'; 
       echo '<br>';
     }
 
