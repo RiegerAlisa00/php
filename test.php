@@ -111,27 +111,27 @@ for($i=1; $i < 11; $i++)
     $einz_float= (float)$einz_str;
     if ($einz_str == $einz_int)
     {
-      if ($einz_int >= 0 ) 
+      if ($einz_int > 0 ) 
       {
         echo '<p style="color:green">Der '.$i.'.Einzelpreis ist '.$einz_int.'</p>'; 
         echo '<br>';
         $help = 1;
       }
       else{
-        echo '<p style="color:red">Der '.$i.'.Einzelpreis ist kleiner als 0</p>'; 
+        echo '<p style="color:red">Der '.$i.'.Einzelpreis ist kleiner als 1</p>'; 
         echo '<br>';
       }
     }
     else if ($einz_str == $einz_float)
     {
-      if ($einz_float >= 0 ) 
+      if ($einz_float > 0 ) 
       {
         echo '<p style="color:green">Der '.$i.'.Einzelpreis ist '.$einz_float.'</p>'; 
         echo '<br>';
         $help = 2;
       }
       else{
-        echo '<p style="color:red">Der '.$i.'.Einzelpreis ist kleiner als 0</p>'; 
+        echo '<p style="color:red">Der '.$i.'.Einzelpreis ist kleiner als 1</p>'; 
         echo '<br>';
       }
     }
