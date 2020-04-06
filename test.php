@@ -84,7 +84,7 @@ for($i=1; $i < 11; $i++)
     $menge = (int)$menge_str;
     
 
-    if ($menge >= 0 and $menge_str == $menge) 
+    if ($menge > 0 and $menge_str == $menge) 
     {
       echo '<p style="color:green">Die '.$i.'.Artikel-Menge ist '.$menge.'</p>'; 
       echo '<br>';
